@@ -1,0 +1,59 @@
+{
+  "name": "angular2-webpack2-starter",
+  "version": "1.0.0",
+  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "karma start",
+    "build": "rimraf dist aot && npm run ngc && webpack --config config/webpack.prod.js",
+    "build:server": "npm run ngc && webpack-dev-server --config config/webpack.prod.js",
+    "ngc": "ngc && ngc -p tsconfig-aot.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.se.dooioo.com/104705/angular2-webpack-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.1",
+    "@angular/compiler-cli": "^2.2.1",
+    "@angular/platform-server": "^2.2.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25",
+    "ngdui-core": "^0.1.4",
+    "ngdui-complex": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "typescript": "^2.0.3",
+    "webpack": "2.1.0-beta.27",
+    "webpack-dev-server": "2.1.0-beta.11",
+    "webpack-merge": "~0.20.0",
+    "angular2-router-loader": "^0.3.4",
+    "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "autoprefixer": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss": "^5.2.4",
+    "postcss-loader": "postcss/postcss-loader",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1"
+  }
+}
