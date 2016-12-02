@@ -30,7 +30,7 @@ module.exports = webpackMerge(commonConfig, {
         historyApiFallback: true,
         contentBase: helper.root("dist"),
         compress: true,
-        port: 8080,
+        port: 3000,
         hot: true,
         inline: true,
         publicPath: "/"

@@ -44,12 +44,5 @@ module.exports = webpackMerge(commonConfig, {
             debug: false
         }),
         extractCSS
-    ],
-    devServer: {
-        historyApiFallback: true,
-        contentBase: helper.root("dist"),
-        compress: true,
-        port: 8070,
-        publicPath: "/"
-    }
+    ]
 });

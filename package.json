@@ -1,13 +1,13 @@
 {
   "name": "angular2-webpack2-starter",
   "version": "1.0.0",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "description": "使用Webpack2打包Angular2项目",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "karma start",
     "build": "rimraf dist aot && npm run ngc && webpack --config config/webpack.prod.js",
-    "build:server": "npm run ngc && webpack-dev-server --config config/webpack.prod.js",
-    "ngc": "ngc && ngc -p tsconfig-aot.json"
+    "build:server": "npm run build && npm run lite-server",
+    "ngc": "ngc && ngc -p tsconfig-aot.json",
+    "lite-server": "lite-server -c config/my-bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -54,6 +54,7 @@
     "postcss": "^5.2.4",
     "postcss-loader": "postcss/postcss-loader",
     "precss": "^1.4.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "lite-server": "~2.2.2"
   }
 }
