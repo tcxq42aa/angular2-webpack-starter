@@ -32,8 +32,8 @@
     "rxjs": "5.0.0-rc.4",
     "systemjs": "0.19.27",
     "zone.js": "^0.7.2",
-    "ngdui-core": "^0.2.3",
-    "ngdui-complex": "^0.2.3"
+    "ngdui-core": "^0.3.0",
+    "ngdui-complex": "^0.3.0"
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
