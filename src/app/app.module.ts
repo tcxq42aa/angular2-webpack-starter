@@ -7,7 +7,7 @@ import { NgdCoreModule } from "ngdui-core";
 import { NgdComplexModule } from "ngdui-complex";
 import { AppComponent } from "./app.component";
 @NgModule({
-    imports: [BrowserModule, NgdCoreModule, NgdComplexModule],
+    imports: [BrowserModule, NgdCoreModule.forRoot(), NgdComplexModule.forRoot()],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
